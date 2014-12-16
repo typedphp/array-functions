@@ -2,6 +2,8 @@
 
 namespace TypedPHP\Functions\ArrayFunctions;
 
+use TypedPHP\Functions\NumberFunctions;
+
 /**
  * @param array $haystack
  * @param mixed $needle
@@ -17,11 +19,13 @@ function contains(array $haystack, $needle)
  * @param array    $array
  * @param callable $callback
  *
- * @return bool
+ * @return array
  */
 function each(array $array, callable $callback)
 {
-    return array_walk($array, $callback);
+    array_walk($array, $callback);
+
+    return $array;
 }
 
 /**
@@ -114,4 +118,20 @@ function slice(array $array, $offset = 0, $limit = 0)
     }
 
     return array_slice($array, $offset, $limit);
+}
+
+/**
+ * @param array $array
+ *
+ * @return mixed
+ */
+function random(array $array)
+{
+    $index = NumberFunctions\random(0, length($array));
+
+    if (isset($array[$index])) {
+        return $array[$index];
+    }
+
+    return null;
 }

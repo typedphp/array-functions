@@ -75,4 +75,10 @@ class ArrayFunctionTest extends Test
         $this->assertEquals([2, 3], ArrayFunctions\slice([1, 2, 3], 1));
         $this->assertEquals([2], ArrayFunctions\slice([1, 2, 3], 1, 1));
     }
+
+    public function testRandom()
+    {
+        $this->assertNull(ArrayFunctions\random([]));
+        $this->assertNotNull(ArrayFunctions\random([1, 2, 3]));
+    }
 }

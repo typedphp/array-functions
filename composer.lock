@@ -4,8 +4,86 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "78ff56e9da77c83dd3549e7fc52156d0",
-    "packages": [],
+    "hash": "1cfb940e12e4749162a22ae9c9f9be01",
+    "packages": [
+        {
+            "name": "typedphp/number-functions",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/typedphp/number-functions.git",
+                "reference": "d78008acaea7e696c48ac55134070378cf5f3680"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/typedphp/number-functions/zipball/d78008acaea7e696c48ac55134070378cf5f3680",
+                "reference": "d78008acaea7e696c48ac55134070378cf5f3680",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "typedphp/type-functions": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/NumberFunctions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Pitt",
+                    "email": "cgpitt@gmail.com"
+                }
+            ],
+            "time": "2014-12-16 08:57:59"
+        },
+        {
+            "name": "typedphp/type-functions",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/typedphp/type-functions.git",
+                "reference": "8efdae6b8a67cd9049ddb3f42dcf0865ad470be7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/typedphp/type-functions/zipball/8efdae6b8a67cd9049ddb3f42dcf0865ad470be7",
+                "reference": "8efdae6b8a67cd9049ddb3f42dcf0865ad470be7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/TypeFunctions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Pitt",
+                    "email": "cgpitt@gmail.com"
+                }
+            ],
+            "time": "2014-12-15 18:27:02"
+        }
+    ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",

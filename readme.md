@@ -8,15 +8,30 @@
 
 ## Example
 
-TODO
+```php
+use TypedPHP\Functions\ArrayFunctions;
+
+ArrayFunctions\map([1, 2, 3], function($item) { return $item * 2; }); // [2, 4, 6]
+ArrayFunctions\contains(["foo", "bar", "baz], "bar"); // true
+```
 
 Functions:
 
-TODO
+- `contains(array $haystack, $needle) → bool`
+- `each(array $array, callable $callback) → array`
+- `exclude(array $array, array $exclude) → array`
+- `filter(array $array, callable $callback) → array`
+- `length(array $array) → int`
+- `has(array $array, $needle) → bool`
+- `join(array $array, $glue) → string`
+- `map(array $array, callable $callback) →  array`
+- `merge(array $array, array $merge) → array`
+- `slice(array $array, $offset = 0, $limit = 0) → array`
+- `random(array $array) → mixed`
 
 Caveats:
 
-TODO
+- Nope
 
 ## Installation
 
