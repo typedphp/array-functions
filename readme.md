@@ -12,7 +12,7 @@
 use TypedPHP\Functions\ArrayFunctions;
 
 ArrayFunctions\map([1, 2, 3], function($item) { return $item * 2; }); // [2, 4, 6]
-ArrayFunctions\contains(["foo", "bar", "baz], "bar"); // true
+ArrayFunctions\contains(["foo", "bar", "baz"], "bar"); // true
 ```
 
 Functions:
