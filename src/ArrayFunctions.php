@@ -127,11 +127,11 @@ function slice(array $array, $offset = 0, $limit = 0)
  */
 function random(array $array)
 {
-    $index = NumberFunctions\random(0, length($array) - 1);
-
-    if (isset($array[$index])) {
-        return $array[$index];
+    if (length($array) === 0) {
+        return null;
     }
 
-    return null;
+    $index = NumberFunctions\random(0, length($array) - 1);
+
+    return $array[$index];
 }
