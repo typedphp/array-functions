@@ -127,7 +127,7 @@ function slice(array $array, $offset = 0, $limit = 0)
  */
 function random(array $array)
 {
-    $index = NumberFunctions\random(0, length($array));
+    $index = NumberFunctions\random(0, length($array) - 1);
 
     if (isset($array[$index])) {
         return $array[$index];
